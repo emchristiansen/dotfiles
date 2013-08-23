@@ -30,3 +30,5 @@ alias pwdcp='pwd | pbcopy'
 
 # Kills all processes matching regex.
 function ekill() { ps aux | grep -e "$@" | grep -v grep | awk '{print $2}' | xargs -i kill -9 {}; }
+
+export PATH=$PATH:~/bin
